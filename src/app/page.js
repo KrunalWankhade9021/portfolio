@@ -9,6 +9,7 @@ import GlassNavigation from "@/components/GlassNavigation";
 import ProjectsGrid from "@/components/ProjectsGrid";
 
 export default function Home() {
+  // HMR Trigger
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
       {/* Background - Three.js Dotted Surface */}
