@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Send, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import SocialLinks from './SocialLinks';
 
 export default function AIChatHero() {
     const [inputValue, setInputValue] = useState("");
@@ -85,7 +86,7 @@ export default function AIChatHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-                className="w-full max-w-xl relative group"
+                className="w-full max-w-xl relative group mb-8"
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur opacity-20 group-hover:opacity-30 transition-opacity" />
                 <div className="relative flex items-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-full p-2 pl-6 shadow-2xl active:scale-[0.99] transition-transform">
@@ -104,6 +105,15 @@ export default function AIChatHero() {
                         <Send size={20} />
                     </button>
                 </div>
+            </motion.div>
+
+            {/* Social Links - Promoted to Hero */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+            >
+                <SocialLinks />
             </motion.div>
         </div>
     );

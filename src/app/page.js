@@ -44,11 +44,6 @@ export default function Home() {
         {/* Achievements */}
         <Achievements />
 
-        {/* Connect / Bio */}
-        <section id="contact" className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-semibold mb-6">Connect with Me</h2>
-          <SocialLinks />
-        </section>
 
         {/* Chat Interface (Fallback) */}
         <section id="chat-interface" className="container mx-auto px-4 pt-12">
