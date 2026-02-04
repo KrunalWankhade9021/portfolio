@@ -15,7 +15,7 @@ export default function Home() {
       <DottedSurface className="opacity-40" />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen flex flex-col justify-center">
+      <div className="relative min-h-screen flex flex-col justify-start pt-12">
         <AIChatHero />
         <GlassNavigation />
       </div>

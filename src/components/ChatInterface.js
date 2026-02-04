@@ -25,7 +25,10 @@ export default function ChatInterface() {
     };
 
     useEffect(() => {
-        scrollToBottom();
+        // Only scroll if we have more than the initial message or if loading
+        if (messages.length > 1 || isLoading) {
+            scrollToBottom();
+        }
     }, [messages, isLoading]);
 
     const handleSendMessage = async (userMessageContent) => {

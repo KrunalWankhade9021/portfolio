@@ -13,7 +13,7 @@ const navItems = [
 
 export default function GlassNavigation() {
     return (
-        <div className="w-full max-w-4xl mx-auto px-4 pb-20 relative z-10">
+        <div className="w-full max-w-4xl mx-auto px-4 relative z-10">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {navItems.map((item, index) => (
                     <motion.a

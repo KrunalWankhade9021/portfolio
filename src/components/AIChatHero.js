@@ -1,11 +1,16 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SocialLinks from './SocialLinks';
 
 export default function AIChatHero() {
     const [inputValue, setInputValue] = useState("");
+
+    // Force scroll to top on mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleSend = () => {
         if (!inputValue.trim()) return;
@@ -27,7 +32,8 @@ export default function AIChatHero() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 relative z-10">
+        <div id="bio" className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 relative z-10 scroll-mt-24">
+            <div id="contact" className="absolute -top-24" /> {/* Hidden anchor offset for Contact to ensure full hero visibility */}
             {/* Online Status Badge */}
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
