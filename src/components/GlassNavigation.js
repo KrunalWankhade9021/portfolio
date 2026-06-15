@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 const navItems = [
     { label: "Me", icon: User, color: "text-blue-400", href: "#bio" },
     { label: "Experience", icon: Briefcase, color: "text-purple-400", href: "#experience" },
-    { label: "Projects", icon: Code, color: "text-green-400", href: "#odf-spotlight" }, // Pointing to ODF as main project
+    { label: "Projects", icon: Code, color: "text-green-400", href: "#projects" },
     { label: "Skills", icon: Cpu, color: "text-pink-400", href: "#skills" },
-    { label: "Contact", icon: Mail, color: "text-yellow-400", href: "#contact" },
+    { label: "Contact", icon: Mail, color: "text-yellow-400", href: "#chat-interface" },
 ];
 
 export default function GlassNavigation() {

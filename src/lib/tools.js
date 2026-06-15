@@ -34,6 +34,22 @@ export const tools = [
             parameters: { type: "object", properties: {} },
         },
     },
+    {
+        type: "function",
+        function: {
+            name: "get_education",
+            description: "Get the candidate's education, degree, university, graduation timeline, and GPA.",
+            parameters: { type: "object", properties: {} },
+        },
+    },
+    {
+        type: "function",
+        function: {
+            name: "get_achievements",
+            description: "Get the candidate's achievements and certifications (e.g. Amazon ML Summer School, Oracle Generative AI certification).",
+            parameters: { type: "object", properties: {} },
+        },
+    },
 ];
 
 // 2. Tool Executioner
@@ -47,6 +63,10 @@ export async function runTool(name, args) {
             return JSON.stringify(resumeData.projects);
         case "get_skills":
             return JSON.stringify(resumeData.skills);
+        case "get_education":
+            return JSON.stringify(resumeData.education);
+        case "get_achievements":
+            return JSON.stringify(resumeData.achievements);
         default:
             return "Tool not found.";
     }

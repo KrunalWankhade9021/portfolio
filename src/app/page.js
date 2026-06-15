@@ -25,17 +25,17 @@ export default function Home() {
       <div className="relative z-10 space-y-24 pb-24">
 
         {/* Skills Section */}
-        <section id="skills">
+        <section id="skills" className="scroll-mt-24">
           <SkillsOrbital />
         </section>
 
         {/* Projects Grid */}
-        <section id="projects">
+        <section id="projects" className="scroll-mt-24">
           <ProjectsGrid />
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="container mx-auto px-4">
+        <section id="experience" className="container mx-auto px-4 scroll-mt-24">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Professional Journey</h2>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
 
 
         {/* Chat Interface (Fallback) */}
-        <section id="chat-interface" className="container mx-auto px-4 pt-12">
+        <section id="chat-interface" className="container mx-auto px-4 pt-12 scroll-mt-24">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-semibold text-muted-foreground">
               Hiring Intelligence? Chat with my AI Twin
