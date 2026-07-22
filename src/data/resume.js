@@ -103,6 +103,12 @@ export const resumeData = {
     ],
     projects: [
         {
+            title: "ImageSense",
+            description: "On-device natural-language photo search for Android. Describe a memory (e.g. 'sunset at the beach') and instantly retrieve matching gallery photos, 100% offline with zero cloud uploads. Runs a quantized CLIP ViT-B/32 vision-language model on-device via ONNX Runtime, achieving 0.89+ embedding fidelity, with incremental indexing and a Material 3 Jetpack Compose UI.",
+            tech: ["Kotlin", "Jetpack Compose", "ONNX Runtime", "CLIP ViT-B/32", "On-Device ML", "Room/SQLite"],
+            link: "https://github.com/KrunalWankhade9021/ImageSense"
+        },
+        {
             title: "Offline Document Finder (ODF)",
             description: "A privacy-first semantic search system inspired by Windows Spotlight. Uses vector embeddings and ChromaDB for efficient retrieval.",
             tech: ["Python", "ChromaDB", "RAG", "Semantic Search"],

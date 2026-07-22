@@ -69,7 +69,7 @@ export default function ChatInterface() {
                         Krunal <span className="gradient-text">AI</span>
                     </h1>
                     <a
-                        href="https://drive.google.com/file/d/1OtXtiH6cnsZCqRJ5RNuHxXqs1MsDMK_R/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/14j28r1iyd6r-bo-UqLbjMNKg0_wIqHfN/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm font-medium hover:text-primary transition-colors"
