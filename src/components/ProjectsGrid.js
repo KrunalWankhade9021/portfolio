@@ -4,6 +4,15 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
     {
+        title: "ImageSense",
+        featured: true,
+        description: "On-device natural-language photo search for Android — describe a memory ('sunset at the beach', 'city at night') and instantly retrieve matching gallery photos, 100% offline with zero cloud uploads. Runs a quantized CLIP ViT-B/32 vision-language model directly on the phone via ONNX Runtime, with incremental indexing and a Material 3 Compose UI.",
+        highlights: ["100% On-Device", "0.89+ Embedding Fidelity", "CLIP ViT-B/32 · ONNX", "Privacy by Design"],
+        tags: ["Kotlin", "Jetpack Compose", "ONNX Runtime", "CLIP", "On-Device ML", "Room/SQLite"],
+        githubLink: "https://github.com/KrunalWankhade9021/ImageSense",
+        link: "https://github.com/KrunalWankhade9021/ImageSense"
+    },
+    {
         title: "Offline Document Finder (ODF)",
         description: "A privacy-first semantic search engine that enables instant system-wide file discovery using vector embeddings and ChromaDB. Fully offline, high-performance, and Windows Spotlight-style user experience.",
         tags: ["Python", "ChromaDB", "Semantic Search", "Local-First", "React"],
